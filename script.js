@@ -14,7 +14,10 @@ const servers = [
     "og-network.net",
     "org.mc-complex.com",
     "mc.applecraft.org",
-    "ms.loverfella.com (PAY TO WIN)",
+    "ms.loverfella.com",
+    "mc.survival.tc:25565"
+    "playthedojo.com"
+    "org.earthmc.net"
     // Add more servers here
 ];
 
