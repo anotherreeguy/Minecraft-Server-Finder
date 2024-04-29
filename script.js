@@ -58,7 +58,23 @@ const servers = [
     "play.foxsmp.net",
     "mc.serizon.net",
     "nohub.playcdu.co",
-    "play.alttd.com"
+    "play.alttd.com",
+    "mc.hypixel.net",
+    "play.mckingcraft.net",
+    "play.extremecraft.net",
+    "play.reeguy.nl",
+    "play.mineverse.com",
+    "261.237.458.173",
+    "mc.netherite.gg",
+    "join.insanitycraft.net",
+    "mc.advancius.net",
+    "mc.advancius.net",
+    "hub.opblocks.com",
+    "mcs.vanillarealms.com",
+    "og-network.net",
+    "org.mc-complex.com",
+    "mc.applecraft.org",
+    "ms.loverfella.com (PAY TO WIN)",
 ];
 
 const findServerButton = document.getElementById('find-server-btn');
