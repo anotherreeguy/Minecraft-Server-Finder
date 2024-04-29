@@ -62,7 +62,7 @@ const servers = [
     "mc.hypixel.net",
     "play.mckingcraft.net",
     "play.extremecraft.net",
-    "play.reeguy.nl",
+    "play.reeguy.nl",   
     "play.mineverse.com",
     "261.237.458.173",
     "mc.netherite.gg",
@@ -77,9 +77,90 @@ const servers = [
     "ms.loverfella.com (PAY TO WIN)",
 ];
 
+const serverDescriptions = {
+    "mcsl.huabacraft.com": "HuabaCraft offers a diverse range of game modes, from survival to creative, with an active and friendly community.",
+    "akumamc.net": "AkumaMC is a PvP-focused server with custom plugins and a variety of game modes to explore.",
+    "MCSL.PURPLE.WTF": "Purple is a unique server offering custom minigames and challenges for players to enjoy.",
+    "play.anubismc.com": "AnubisMC features a mix of classic and custom game modes, with a focus on community-driven events and activities.",
+    "msl.extremecraft.net": "ExtremeCraft is a large network offering a wide range of game modes, from factions to skyblock, with active player communities.",
+    "mc.lotc.co": "Lord of the Craft is a roleplaying server set in a rich and immersive fantasy world, where players can create their own stories and adventures.",
+    "skyblock.net": "SkyBlock.net offers a classic SkyBlock experience with custom challenges, islands, and a supportive community.",
+    "mcsl.lemoncloud.net": "LemonCloud features a variety of game modes, including SkyBlock, Survival, and KitPvP, with regular updates and events.",
+    "msl.simplesurvival.gg": "SimpleSurvival is a laid-back survival server with a focus on community building and player interaction.",
+    "LeoneMC.net": "LeoneMC offers a unique blend of survival and RPG elements, with custom features and a welcoming community.",
+    "msl.ccnetmc.com": "CCNetMC offers a range of classic game modes, including factions and creative, with an active player base and regular events.",
+    "budgie.network": "Budgie Network provides a variety of game modes, including SkyBlock and Survival, with a friendly and supportive community.",
+    "sl.minecadia.com": "Minecadia offers a mix of classic and custom game modes, with a focus on creativity and community-driven content.",
+    "mcsl.vortexnetwork.net": "VortexNetwork features a range of game modes, including factions and prison, with custom plugins and frequent updates.",
+    "i.nebulamc.gg": "NebulaMC offers a unique and immersive survival experience with custom features and an active player community.",
+    "msl.ultimis.net": "Ultimis is a classic survival server with a focus on community building and player collaboration.",
+    "play.wildprison.net": "WildPrison is a prison server with custom mines, quests, and events, offering a competitive and engaging gameplay experience.",
+    "play.fishonmc.net": "FishOnMC offers a variety of fishing-themed game modes, including survival and SkyBlock, with custom features and events.",
+    "play.cubecraft.net": "CubeCraft is a large network offering a wide range of game modes, from minigames to PvP arenas, with a focus on fun and accessibility.",
+    "mcsl.twerion.net": "Twerion offers a diverse range of game modes, including survival and creative, with custom features and a welcoming community.",
+    "minecraftonline.com": "MinecraftOnline is one of the oldest and most established Minecraft servers, featuring a vast, player-built world and a tight-knit community.",
+    "trappedmc.com": "TrappedMC offers a unique escape room experience within Minecraft, with challenging puzzles and immersive gameplay.",
+    "Play.PokeFind.co": "PokeFind is a Pokémon-themed server offering various game modes, including Pixelmon and Pokémon survival, with custom features and events.",
+    "play.cobbleland.com": "CobbleLand offers a classic survival experience with custom features and events, set in a friendly and welcoming community.",
+    "mcsl.gtm.network": "GTM Network offers a wide range of game modes, including factions and skyblock, with custom features and regular updates.",
+    "join.mccentral.org": "MCCentral is a large network offering a variety of game modes, with a focus on competitive gameplay and community events.",
+    "mcsl.haycube.net": "HayCube offers a laid-back survival experience with a focus on farming and animal husbandry, set in a friendly and welcoming community.",
+    "play.rulercraft.com": "RulerCraft is a medieval-themed server offering survival and creative game modes, with custom features and events.",
+    "msl.mc-blaze.com": "BlazeMC offers a range of game modes, including factions and creative, with custom features and a welcoming community.",
+    "mc.mcs.gg": "MCS is a classic survival server with a focus on player collaboration and community building, offering a friendly and welcoming environment.",
+    "mcsl.oneblockmc.com": "OneBlockMC offers a unique survival experience where players start on a single block and expand their world through challenges and quests.",
+    "fly.mineland.net": "MineLand features a range of game modes, including factions and skyblock, with custom plugins and a competitive player community.",
+    "go.mineberry.org": "MineBerry is a large network offering a variety of game modes, with a focus on competitive PvP and player events.",
+    "mcsl.minewave.net": "MineWave offers a variety of game modes, including survival and creative, with custom features and a friendly community.",
+    "fun.oplegends.com": "OP Legends offers a range of game modes, including factions and skyblock, with custom features and regular events.",
+    "msl.strongcraft.org": "StrongCraft offers a classic survival experience with a focus on player interaction and community building, set in a friendly and welcoming environment.",
+    "armamc.com": "ArmaMC offers a variety of game modes, including factions and survival, with custom features and regular updates.",
+    "play.jackpotmc.com:57846": "JackpotMC offers a unique casino-themed server experience with various gambling games and events for players to enjoy.",
+    "play.cobblemonislands.com": "CobbleMon Islands offers a survival experience set on custom islands, with challenges and events for players to explore and conquer.",
+    "mc.gamster.org": "Gamster is a large network offering a variety of game modes, from survival to minigames, with a focus on fun and community.",
+    "mc.safesurvival.net": "SafeSurvival offers a safe and friendly survival experience with custom features and events, set in a supportive and welcoming community.",
+    "play.boxpvp.net": "BoxPvP offers fast-paced PvP action in custom arenas, with a variety of kits and game modes to choose from.",
+    "mcsl.semisurvivalcraft.com": "SemiSurvivalCraft offers a semi-vanilla survival experience with custom features and events, set in a close-knit and supportive community.",
+    "msl.applemc.fun": "AppleMC offers a range of game modes, including factions and skyblock, with custom features and regular updates.",
+    "Play.Performium.co": "Performium offers a variety of game modes, including factions and creative, with custom features and a friendly community.",
+    "sl.swancraftmc.com": "SwanCraft offers a classic survival experience with custom features and events, set in a friendly and welcoming community.",
+    "mcsl.orchardcraftmc.com": "OrchardCraft offers a range of game modes, including survival and creative, with custom features and regular events.",
+    "play.ve-mc.com": "VE-MC offers a variety of game modes, including factions and skyblock, with custom features and a welcoming community.",
+    "play.togethercraft.online": "TogetherCraft offers a cooperative survival experience with custom features and events, set in a close-knit and supportive community.",
+    "join.ventureland.net": "VentureLand offers a range of game modes, including factions and creative, with custom features and regular events.",
+    "cobble.pokeclash.com": "PokeClash offers a Pokémon-themed survival experience with custom features and events, set in a friendly and welcoming community.",
+    "play.lokamc.com": "LokaMC offers a unique survival experience with custom features and events, set in a rich and immersive fantasy world.",
+    "epic.newwindserver.com": "NewWindServer offers a variety of game modes, including factions and skyblock, with custom features and regular updates.",
+    "mcsl.zedarmc.com": "ZedarMC offers a range of game modes, including survival and creative, with custom features and regular events.",
+    "play.emc.gs": "EMC offers a classic survival experience with a focus on player collaboration and community building, set in a friendly and welcoming environment.",
+    "msl.pokehub.org": "PokeHub offers a Pokémon-themed survival experience with custom features and events, set in a friendly and welcoming community.",
+    "play.foxsmp.net": "FoxSMP offers a laid-back survival experience with a focus on player interaction and community building, set in a supportive and welcoming environment.",
+    "mc.serizon.net": "Serizon offers a range of game modes, including factions and creative, with custom features and regular events.",
+    "nohub.playcdu.co": "CDU offers a classic survival experience with a focus on community building and player interaction, set in a friendly and welcoming environment.",
+    "play.alttd.com": "ALT:TD offers a unique survival experience with custom features and events, set in a post-apocalyptic world where players must rebuild civilization.",
+    "mc.hypixel.net": "Hypixel is one of the largest Minecraft servers, offering a wide range of game modes, from minigames to adventure maps, with millions of players worldwide.",
+    "play.mckingcraft.net": "McKingCraft offers a variety of game modes, including factions and creative, with custom features and regular events.",
+    "play.extremecraft.net": "ExtremeCraft is a large network offering a wide range of game modes, from factions to skyblock, with active player communities.",
+    "play.reeguy.nl": "ReeBit offers a variety of game modes, including survival and creative, with custom features and regular events. (ReeBit non pay to win.)",
+    "play.mineverse.com": "Mineverse offers a mix of classic and custom game modes, with a focus on community-driven events and activities.",
+    "261.237.458.173": "This server's description is unknown.",
+    "mc.netherite.gg": "NetheriteGG offers a variety of game modes, including factions and skyblock, with custom features and regular events.",
+    "join.insanitycraft.net": "InsanityCraft offers a range of game modes, including factions and creative, with custom features and regular events.",
+    "mc.advancius.net": "Advancius Network offers a variety of game modes, with a focus on community-driven events and activities.",
+    "hub.opblocks.com": "OPBlocks offers a range of game modes, including factions and skyblock, with custom features and regular events.",
+    "mcs.vanillarealms.com": "Vanilla Realms offers a classic survival experience with minimal plugins, perfect for players seeking a pure Minecraft experience.",
+    "og-network.net": "OG Network offers a variety of game modes, including factions and creative, with custom features and regular events.",
+    "org.mc-complex.com": "MC-Complex offers a diverse range of game modes, with a focus on community-driven events and activities.",
+    "mc.applecraft.org": "AppleCraft offers a variety of game modes, including factions and skyblock, with custom features and regular events.",
+    "ms.loverfella.com (PAY TO WIN)": "LoverFella offers a variety of game modes, with a focus on community-driven events and activities. Please note that some aspects of the server may involve pay-to-win mechanics.",
+};
+
+
 const findServerButton = document.getElementById('find-server-btn');
 const serverDisplay = document.getElementById('server-display');
 const serverInfoFrame = document.getElementById('server-info-frame');
+
+document.querySelector('.container').classList.add('show');
 
 findServerButton.addEventListener('click', () => {
     const randomIndex = Math.floor(Math.random() * servers.length);
@@ -88,6 +169,12 @@ findServerButton.addEventListener('click', () => {
     const embedUrl = `https://namemc.com/server/${randomServer}/embed`;
     serverInfoFrame.src = embedUrl;
     serverInfoFrame.style.display = 'block'; // Show the iframe
+
+    // Update the server description
+    const serverDescription = serverDescriptions[randomServer] || "Description not available.";
+    serverDescriptionElement.textContent = serverDescription;
 });
 
-document.querySelector('.container').classList.add('show');
+// Show the description div
+const serverDescriptionElement = document.getElementById('server-description');
+serverDescriptionElement.style.display = 'block';
