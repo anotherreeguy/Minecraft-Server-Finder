@@ -89,3 +89,5 @@ findServerButton.addEventListener('click', () => {
     serverInfoFrame.src = embedUrl;
     serverInfoFrame.style.display = 'block'; // Show the iframe
 });
+
+document.querySelector('.container').classList.add('show');
